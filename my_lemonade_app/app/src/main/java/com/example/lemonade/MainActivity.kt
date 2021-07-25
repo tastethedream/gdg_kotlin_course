@@ -51,6 +51,8 @@ class MainActivity : AppCompatActivity() {
     private var lemonImage: ImageView? = null
 
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -66,11 +68,12 @@ class MainActivity : AppCompatActivity() {
         lemonImage = findViewById(R.id.image_lemon_state)
         setViewElements()
         lemonImage!!.setOnClickListener {
-            // TODO: call the method that handles the state when the image is clicked
+            //  call the method that handles the state when the image is clicked
+            clickLemonImage()
         }
         lemonImage!!.setOnLongClickListener {
-            // TODO: replace 'false' with a call to the function that shows the squeeze count
-            false
+            // replace 'false' with a call to the function that shows the squeeze count
+            showSnackbar()
         }
     }
 
@@ -91,10 +94,22 @@ class MainActivity : AppCompatActivity() {
      * This method determines the state and proceeds with the correct action.
      */
     private fun clickLemonImage() {
+        // var lemonImage: ImageView = (findViewById(R.id.imageView))
+
         // TODO: use a conditional statement like 'if' or 'when' to track the lemonadeState
         //  when the the image is clicked we may need to change state to the next step in the
         //  lemonade making progression (or at least make some changes to the current state in the
         //  case of squeezing the lemon). That should be done in this conditional statement
+
+        var lemonImage when (lemonadeState) {
+            SELECT -> R.drawable.lemon_tree
+            SQUEEZE ->  R.drawable.lemon_squeeze
+            DRINK ->  R.drawable.lemon_drink
+            RESTART ->  R.drawable.lemon_restart
+        }
+
+        //lemonImage.setImageResource(imageSelection)
+        //lemonImage.contentDescription =
 
         // TODO: When the image is clicked in the SELECT state, the state should become SQUEEZE
         //  - The lemonSize variable needs to be set using the 'pick()' method in the LemonTree class
@@ -107,7 +122,7 @@ class MainActivity : AppCompatActivity() {
 
         // TODO: When the image is clicked in the DRINK state the state should become RESTART
 
-        // TODO: When the image is clicked in the RESTART state the state sholud become SELECT
+        // TODO: When the image is clicked in the RESTART state the state should become SELECT
 
         // TODO: lastly, before the function terminates we need to set the view elements so that the
         //  UI can reflect the correct state
