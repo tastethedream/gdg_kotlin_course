@@ -54,4 +54,10 @@ fun main() {
 
 
 
+#### Dice Roller App
 
+![Dice Roler app](images/diceRollerApp.png)
+
+#### Tip Calculator App
+
+![Tip Calculator app](images/tip.png) 
