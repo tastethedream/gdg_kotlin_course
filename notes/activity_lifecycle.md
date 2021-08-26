@@ -6,9 +6,9 @@ As an Android developer, you need to understand the activity lifecycle. If your 
 
 Every activity has what is known as a lifecycle. This is an allusion to plant and animal lifecycles, like the lifecycle of this butterfly—the different states of the butterfly show its growth from birth to fully formed adulthood to death.
 
-![butterfly lifecycle](/notes/images/butterfly.png)
+![butterfly lifecycle](images/butterfly.png)
 
 Similarly, the activity lifecycle is made up of the different states that an activity can go through, from when the activity is first initialized to when it is finally destroyed and its memory reclaimed by the system. As the user starts your app, navigates between activities, navigates inside and outside of your app, the activity changes state. The diagram below shows all the activity lifecycle states. As their names indicate, these states represent the status of the activity.
 
 
-![activity lifecycle](/gdg_kotlin_course/notes/images/lifecycle.png)
+![activity lifecycle](images/lifecycle.png)
