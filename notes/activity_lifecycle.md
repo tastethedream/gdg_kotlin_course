@@ -11,4 +11,4 @@ Every activity has what is known as a lifecycle. This is an allusion to plant an
 Similarly, the activity lifecycle is made up of the different states that an activity can go through, from when the activity is first initialized to when it is finally destroyed and its memory reclaimed by the system. As the user starts your app, navigates between activities, navigates inside and outside of your app, the activity changes state. The diagram below shows all the activity lifecycle states. As their names indicate, these states represent the status of the activity.
 
 
-![activity lifecycle](/gdg_kotlin_course/notes/lifecycle.png)
+![activity lifecycle](/gdg_kotlin_course/notes/images/lifecycle.png)
