@@ -6,7 +6,7 @@ An **implicit intent** is a bit more abstract, where you tell the system the typ
 
 You use an explicit intent for actions or presenting screens in your own app and are responsible for the entire process. You commonly use implicit intents for performing actions involving other apps and rely on the system to determine the end result.
 
-![intents diagram](/gdg_kotlin_course/notes/intents.png)
+![intents diagram](https://github.com/tastethedream/gdg_kotlin_course/blob/main/notes/images/intent.png)
 
 ## What is an extra?
 
