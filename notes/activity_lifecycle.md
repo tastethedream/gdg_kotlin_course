@@ -12,3 +12,9 @@ Similarly, the activity lifecycle is made up of the different states that an act
 
 
 ![activity lifecycle](https://github.com/tastethedream/gdg_kotlin_course/blob/main/notes/images/lifecycle.png)
+
+Often, you want to change some behavior, or run some code when the `activity` lifecycle state changes. Therefore the `Activity` class itself, and any subclasses of Activity such as `AppCompatActivity`, implement a set of lifecycle callback methods. Android invokes these callbacks when the activity moves from one state to another, and you can override those methods in your own activities to perform tasks in response to those lifecycle state changes. The following diagram shows the lifecycle states along with the available overridable callbacks.
+
+
+![activity lifecycle detail](https://github.com/tastethedream/gdg_kotlin_course/blob/main/notes/images/lifecycledetail.png)
+
