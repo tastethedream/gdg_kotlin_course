@@ -28,4 +28,8 @@ The `ViewModel` stores the app related data that isn't destroyed when activity o
 
 To implement `ViewModel` in your app, extend the `ViewModel` class, which is from the architecture components library, and store app data within that class.
 
+## The LifeCycle of a ViewModel
 
+The framework keeps the `ViewModel` alive as long as the scope of the activity or fragment is alive. A `ViewModel` is not destroyed if its owner is destroyed for a configuration change, such as screen rotation. The new instance of the owner reconnects to the existing ViewModel instance, as illustrated by the following diagram:
+
+![lifecycle of a viewModel] ()
