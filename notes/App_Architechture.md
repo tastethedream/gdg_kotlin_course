@@ -32,4 +32,4 @@ To implement `ViewModel` in your app, extend the `ViewModel` class, which is fro
 
 The framework keeps the `ViewModel` alive as long as the scope of the activity or fragment is alive. A `ViewModel` is not destroyed if its owner is destroyed for a configuration change, such as screen rotation. The new instance of the owner reconnects to the existing ViewModel instance, as illustrated by the following diagram:
 
-![lifecycle of a viewModel] ()
+![lifecycle of a viewModel] (https://github.com/tastethedream/gdg_kotlin_course/blob/main/notes/images/lifecycle_viewmodel.png)
